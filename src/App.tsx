@@ -6,8 +6,8 @@ function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<ProductList />}/>
-        <Route path='/add-product' element={< AddProduct/>}/>
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<ProductList />}/>
+        <Route path={`${process.env.PUBLIC_URL}/add-product`} element={< AddProduct/>}/>
       </Routes>
     </BrowserRouter>
   );

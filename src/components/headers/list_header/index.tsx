@@ -15,7 +15,7 @@ function ListHeader({del, setDel}: IProps){
                 </h1>
             </TitleContainer>
             <ButtonContainer>
-                <Link to='/add-product'>
+                <Link to={`${process.env.PUBLIC_URL}/add-product`}>
                     <AddButton>
                         ADD
                     </AddButton>

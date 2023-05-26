@@ -18,7 +18,7 @@ function AddHeader({setSave, save}: IProps){
                 <SaveButton onClick={() => setSave(!save)}>
                     SAVE
                 </SaveButton>
-                <Link to='/'>
+                <Link to={`${process.env.PUBLIC_URL}/`}>
                     <CancelButton>
                         CANCEL
                     </CancelButton>
